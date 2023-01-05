@@ -1,7 +1,7 @@
 # D-Lab's Python Web APIs Workshop
 
 [![Datahub](https://img.shields.io/badge/launch-datahub-blue)](https://dlab.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fdlab-berkeley%2FPython-Web-APIs&urlpath=lab%2Ftree%2FPython-Web-APIs%2F)
-[![Binder](http://mybinder.org/badge.svg)]([LINK](https://mybinder.org/v2/gh/dlab-berkeley/Python-Web-APIs/main?urlpath=tree)
+[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/dlab-berkeley/Python-Web-APIs/main?urlpath=tree)
 
 This repository contains the materials for D-Lab’s Python Web APIs Workshop. Prior experience with Python Fundamentals and Python Data Wrangling is assumed.
 

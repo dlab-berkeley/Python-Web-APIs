@@ -13,12 +13,11 @@ workshop. We additionally recommend a basic understanding of HTML and CSS.
 In this workshop, we cover how to extract data from the web with APIs using
 Python. APIs are often official services offered by companies and other
 entities, which allow you to directly query their servers in order to retrieve
-their data. Platforms like The New York Times, Twitter and Reddit offer APIs to
-retrieve data.
+their data. Platforms like The New York Times offer APIs to retrieve data.
 
-When APIs are not available, one can turn to web scraping. If you want to learn
-how to do web scraping in Python, attend the D-Lab [Python Web
-Scraping](https://github.com/dlab-berkeley/Python-Web-Scraping) Workshop.
+When APIs are not available, which is increasingly the case, one can turn to web 
+scraping. If you want to learn how to do web scraping in Python, attend the 
+D-Lab [Python Web Scraping](https://github.com/dlab-berkeley/Python-Web-Scraping) Workshop.
 
 ## Installation Instructions
 

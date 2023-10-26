@@ -15,7 +15,7 @@ Python. APIs are often official services offered by companies and other
 entities, which allow you to directly query their servers in order to retrieve
 their data. Platforms like The New York Times offer APIs to retrieve data.
 
-When APIs are not available, which is increasingly the case, one can turn to web 
+When APIs are not available or restricted, one can turn to web 
 scraping. If you want to learn how to do web scraping in Python, attend the 
 D-Lab [Python Web Scraping](https://github.com/dlab-berkeley/Python-Web-Scraping) Workshop.
 

@@ -40,7 +40,7 @@ In fact, it looks like Google makes its query by taking the search terms, separa
 
 Using RESTful APIs is essentially formatting these URLs so that you can get the response you want.
 
-## Some Basic Terminology
+## Some Terminology
 
 * **Uniform Resource Location (URL)**: a string of characters that, when interpreted via the Hypertext Transfer Protocol (HTTP), points to a data resource, notably files written in Hypertext Markup Language (HTML) or a subset of a database.  This is often referred to as a "call".
 
@@ -106,6 +106,7 @@ For most APIs, a key or other user credentials are required for any database que
 ![](../images/nytimes_start.png)
 
 Most APIs are set up for developers, so you'll likely be asked to register an "application".  All this really entails is coming up with a name for your project, and providing your real name, organization, and email.  Note that some more popular APIs (e.g. Twitter, Facebook) will require additional information, such as a web address or mobile number.
+
 ## Getting your API Keys
 
 Once you've successfully registered, you will be assigned one or more keys, tokens, or other credentials that must be supplied to the server as part of any API call you make.  To make sure that users aren't abusing their data access privileges (e.g. by making many rapid queries), each set of keys will be given several **rate limits** governing the total number of calls that can be made over certain intervals of time.  For the NYT Article API, we have relatively generous rate limits: 10 calls per minute and 4,000 calls per day.
@@ -120,7 +121,7 @@ Once you've successfully registered, you will be assigned one or more keys, toke
 
 ![](../images/nytimes_app.png)
 
-6. You'll see an API key next to your App ID. Have that key ready to copy into the first notebook.
+5. You'll see an API key next to your App ID. Have that key ready to copy into the first notebook.
 
 ![](../images/nytimes_key.png)
 

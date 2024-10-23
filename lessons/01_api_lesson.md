@@ -10,7 +10,7 @@ You can see the library's licensed sources [here](http://guides.lib.berkeley.edu
 
 # What is an API?
 
-This workshop begins with APIs. You may have heard this terminology in a variety of programming settings. What exactly does it mean?
+This workshop is about APIs. You may have heard this terminology in a variety of programming settings. What exactly does it mean?
 
 * "API" stands for **Application Programming Interface**.
 
@@ -18,7 +18,7 @@ This workshop begins with APIs. You may have heard this terminology in a variety
 
 * A very common type of API is the Web API, which, among other things, allows users to query a remote database over the internet.
 
-* For example, a web service such as Twitter has many databases that may be of use to us: Tweets, Users, Replies, etc. If we want to access some portion of these databases, it'd be helpful to have a set of rules and protocols in place to outline how we access this information. This is the motivation for an API.
+* For example, a web service such as Reddit has many databases that may be of use to us: Posts, Users, Subreddits, etc. If we want to access some portion of these databases, it'd be helpful to have a set of rules and protocols in place to outline how we access this information. This is the motivation for an API.
 
 * Web APIs take on a variety of formats, but the vast majority adhere to a particular style known as **Representational State Transfer** or **REST**.
 
@@ -54,8 +54,8 @@ As you might suspect from the example above, surfing the web is basically equiva
 
 ## API Examples
 
-- [**X / Twitter**](https://developer.x.com/en/):
-Used for pulling X data, posting status updates, and more. Free version allows you to pull 1,500 posts per month.
+- [**Reddit**](https://www.reddit.com/dev/api/):
+Used for pulling Reddit data, posting status updates, and more. 
 
 - [**Spotify**](https://developer.spotify.com/):
 Access to rich song data data such as valence, energy, and danceability metrics.
@@ -63,11 +63,17 @@ Access to rich song data data such as valence, energy, and danceability metrics.
 -  [**Watson IBM Natural Language Inference API**](https://cloud.ibm.com/apidocs/natural-language-understanding):
 Use state of the art NLP models to analyze text sentiment, extract named entities, and classify text.
 
+## API or Web Scraping?
+
+When deciding between using an API or web scraping, you should consider both the method's legality and efficiency. APIs provide structured, authorized access to data, often with clear documentation and rate limits to manage server load. 
+
+Web scraping, on the other hand, involves extracting data from web pages, which may violate a site's terms of service or lead to challenges in navigating complex page structures. 
+
+While scraping can be useful when no API is available, APIs are generally the preferred method for accessing web data due to their reliability and compliance with legal standards.
+
 # The New York Times API
 
 Now, we turn to our main case study of the API portion: the New York Times API.
-
-## All the News That's Fit to Query
 
 The New York Times offers a treasure trove of data about their articles that is easily accessible and available for free! We'll now get set up with API keys so that we can make some API calls to the NYT servers.
 

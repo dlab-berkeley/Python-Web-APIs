@@ -42,7 +42,7 @@ Using RESTful APIs is essentially formatting these URLs so that you can get the 
 
 ## Some Terminology
 
-* **Uniform Resource Location (URL)**: a string of characters that, when interpreted via the Hypertext Transfer Protocol (HTTP), points to a data resource, notably files written in Hypertext Markup Language (HTML) or a subset of a database.  This is often referred to as a "call".
+* **Uniform Resource Locator (URL)**: a string of characters that, when interpreted via the Hypertext Transfer Protocol (HTTP), points to a data resource, notably files written in Hypertext Markup Language (HTML) or a subset of a database.  This is often referred to as a "call".
 
 * **HTTP Methods/Verbs**:
 
@@ -50,40 +50,12 @@ Using RESTful APIs is essentially formatting these URLs so that you can get the 
     
     + *HEAD*, *POST*, *PUT*, *DELETE*: other common methods, though mostly never used for database querying.
     
-## How Do GET Requests Work? A Web Browsing Example
-
 As you might suspect from the example above, surfing the web is basically equivalent to sending a bunch of GET requests to different servers and asking for different files written in HTML.
-
-Suppose, for instance, I wanted to look something up on Wikipedia.  My first step would be to open my web browser and type in http://www.wikipedia.org.  Once I hit return, I'd see the page below.  
-
-![](../images/wikipedia.png)
-
-Several different processes occured, however, between me hitting "return" and the page finally being rendered:
-
-1. The web browser took the entered character string and used the command-line tool `curl` to write a properly formatted HTTP GET request and submitted it to the server that hosts the Wikipedia homepage.
-
-2. After receiving this request, the server sent an HTTP response, from which `curl` extracted the HTML code for the page. A subset of this raw HTML is shown below:
-
-```
-[1] "<!DOCTYPE html>\n<html lang=\"mul\" dir=\"ltr\">\n<head>\n<!-- Sysops: Please do not edit the main template directly; update /temp and synchronise. -->\n<meta charset=\"utf-8\">\n<title>Wikipedia</title>\n<!--[if lt IE 7]><meta http-equiv=\"imagetoolbar\" content=\"no\"><![endif]-->\n<meta name=\"viewport\" content=\"i"
-```
-
-3. The raw HTML code was parsed and then executed by the web browser, rendering the page as seen in the window.
-
-## Web Browsing as a Template for RESTful Database Querying
-
-The process of web browsing described above is a close analogue for the process of database querying via RESTful APIs, with only a few adjustments:
-
-1. While `curl` will still be used to send HTML GET requests to the servers hosting our databases of interest, the character string that we supply to `curl` must be constructed so that the resulting request can be interpreted and succesfully acted upon by the server.  In particular, it is likely that the character string must encode search terms and/or filtering parameters, as well as one or more authentication codes.  While the terms are often similar across APIs, most are API-specific.
-
-2. Unlike with web browsing, the content of the server's response that is extracted by `curl` is unlikely to be HTML code.  Rather, it will likely be raw text response that can be parsed into one of a few file formats commonly used for data storage.  The usual suspects include `csv`, `xml`, and `json` files.
-
-3. Whereas the web browser capably parsed and executed the HTML code, one or more facilities in R, Python, or other programming languages will be necessary for parsing the server response and converting it into a format for local storage (e.g., a dataframe).
 
 ## API Examples
 
-- [**Twitter**](https://developer.twitter.com/):
-Used for pulling/streaming twitter data, posting status updates, and more. Check out their academic API.
+- [**X / Twitter**](https://developer.x.com/en/):
+Used for pulling X data, posting status updates, and more. Free version allows you to pull 1,500 posts per month.
 
 - [**Spotify**](https://developer.spotify.com/):
 Access to rich song data data such as valence, energy, and danceability metrics.

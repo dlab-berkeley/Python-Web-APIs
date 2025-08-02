@@ -6,7 +6,7 @@
 
 This repository contains the materials for D-Lab’s Python Web APIs Workshop.
 
-### Prerequisites
+## Prerequisites
 
 We recommend attending [Python Fundamentals](https://github.com/dlab-berkeley/python-fundamentals) and [Python Data Wrangling](https://github.com/dlab-berkeley/Python-Data-Wrangling/) prior to this workshop. 
 
